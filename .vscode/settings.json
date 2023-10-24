@@ -1,0 +1,13 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.parameterHints.cycle": true
+        
+    },
+    "files.associations": {
+        "mwaitxintrin.h": "c",
+        "time.h": "c"
+    }
+}
