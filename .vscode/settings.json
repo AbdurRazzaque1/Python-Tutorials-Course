@@ -1,8 +1,7 @@
 {
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.typeCheckingMode": "off",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8",
         "editor.parameterHints.cycle": true
         
     },

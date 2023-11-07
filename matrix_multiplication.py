@@ -1,15 +1,15 @@
 mat1 = []
 mat2 = []
 rMat = []
-sum = 0
+ADD = 0
 
 r1 = int(input("How many rows are there in your first matrix:  "))
 c1 = int(input("How many columns are there in your first matrix:  "))
 r2 = int(input("\nHow many rows are there in your second matrix:  "))
 c2 = int(input("How many columns are there in your first matrix:  "))
-n = 0
+N = 0
 
-if (c1 != r2):
+if c1 != r2:
     print("\n\nSorry!, I cannot multiply your matrix. To multiply two matrices make sure the number of columns of the first matrix is equal to the number of rows of the srcond matrix.")
 
 else:
@@ -26,16 +26,15 @@ else:
     for i in range(0, r1):
         for j in range(0, c2):
             for k in range(0, c1):
-                sum = sum + mat1[n]*mat2[j + k*c2]
-                n += 1
-            n = i*c1
-            rMat.append(sum)
-            sum = 0
-        n += c1
-    n = 0
-    
+                ADD = ADD + mat1[N]*mat2[j + k*c2]
+                N += 1
+            N = i*c1
+            rMat.append(ADD)
+            ADD = 0
+        N += c1
+    N = 0
     print("\n\nPrinting the element of the final matrix ...\n")
     for i in range(0, r1):
         for j in range(0, c2):
-            print(f"The element which is at ({i + 1},{j + 1}) = {rMat[n]}")
-            n += 1
+            print(f"The element which is at ({i + 1},{j + 1}) = {rMat[N]}")
+            N += 1
