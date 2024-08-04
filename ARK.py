@@ -1,0 +1,95 @@
+from turtle import *
+bgcolor("black")
+color("red")
+speed(5)
+pensize(2)
+def Color():
+    begin_fill()
+    fillcolor("red")
+def Goto(x , y):
+    up()
+    goto(x , y)
+    down()
+
+Goto(0,-150)
+setheading(90)
+
+Color()
+for i in range(2):
+    fd(300)
+    rt(90)
+    fd(20)
+    rt(90)
+end_fill()
+
+# Color()
+Goto(20,150)
+rt(90)
+fd(30)
+circle(-80,20)
+up()
+circle(-80,10)
+down()
+circle(-80,150)
+fd(30)
+rt(90)
+fd(20)
+rt(90)
+fd(30)
+circle(60,150)
+up()
+circle(60,10)
+down()
+circle(60,20)
+fd(30)
+# end_fill()
+
+Goto(85,-2)
+
+Color()
+goto(150,-150)
+fd(20)
+goto(65,-7)
+end_fill()
+
+Goto(150,-150)
+setheading(60)
+
+Color()
+circle(300,50)
+lt(90)
+fd(20)
+lt(90)
+circle(-280,48)
+end_fill()
+
+Goto(0,150)
+
+Color()
+goto(-170,-150)
+goto(-150,-150)
+goto(0,115)
+end_fill()
+
+Goto(0,10)
+
+Color()
+setheading(180)
+fd(110)
+circle(10,180)
+fd(110)
+end_fill()
+
+Goto(-170,-150)
+setheading(112)
+
+Color()
+circle(-350,43)
+rt(90)
+fd(20)
+rt(90)
+circle(330,40)
+end_fill()
+
+hideturtle()
+done()
